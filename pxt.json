@@ -1,6 +1,6 @@
 {
     "name": "QuickzSwap",
-    "description": "",
+    "description": "Swap positions i guess.",
     "dependencies": {
         "device": "*"
     },

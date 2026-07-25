@@ -15,11 +15,11 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setPosition(100, 100)
 })
 info.onLifeZero(function () {
-    game.setGameOverEffect(false, effects.slash)
+    mySprite.startEffect(effects.fire)
+    sprites.destroy(mySprite)
     game.gameOver(false)
 })
 scene.onHitWall(SpriteKind.Projectile, function (sprite, location) {
-    sprites.destroy(mySprite, effects.fire, 100)
     info.changeLifeBy(-1)
 })
 let Right: Sprite = null
